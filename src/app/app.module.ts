@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { SidePanelComponent } from './side-panel/side-panel.component';
 import { ChannelComponent } from './channel/channel.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { ChannelFeedComponent } from './channel-feed/channel-feed.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     AppComponent,
     SidePanelComponent,
     ChannelComponent,
-    NavbarComponent
+    NavbarComponent,
+    ChannelFeedComponent
   ],
   imports: [
     BrowserModule
