@@ -7,6 +7,10 @@ import { SidePanelComponent } from './side-panel/side-panel.component';
 import { ChannelComponent } from './channel/channel.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ChannelFeedComponent } from './channel-feed/channel-feed.component';
+import { AppRoutingModule } from './/app-routing.module';
+import { MainComponent } from './main/main.component';
+import { SearchPageComponent } from './search-page/search-page.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 
 @NgModule({
@@ -15,10 +19,14 @@ import { ChannelFeedComponent } from './channel-feed/channel-feed.component';
     SidePanelComponent,
     ChannelComponent,
     NavbarComponent,
-    ChannelFeedComponent
+    ChannelFeedComponent,
+    MainComponent,
+    SearchPageComponent,
+    AboutUsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
