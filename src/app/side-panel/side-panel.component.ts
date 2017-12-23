@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Output, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-side-panel',
@@ -7,11 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidePanelComponent implements OnInit {
 
-
+  @Output() changeChannel: EventEmitter<string> = new EventEmitter<string>();
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onChannelChange(channelName: string) {
+    this.changeChannel.emit(channelName);
   }
 
 }

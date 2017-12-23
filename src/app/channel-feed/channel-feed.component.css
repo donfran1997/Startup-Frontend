@@ -1,6 +1,12 @@
-.channel-feed {
-  margin-top: 90px;
+.channel-window {
+  height: 80%;
+  width: 80%;
+  position: fixed;
+  right: 0;
   z-index: 1000;
   padding: 20px;
-  overflow-y: auto;
+}
+.channel-feed {
+  height: 100%;
+  overflow-y: scroll;
 }

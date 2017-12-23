@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
 
+  channelName = 'Channel Name'
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  changeChannel(channelName: string) {
+    this.channelName = channelName;
   }
 
 }

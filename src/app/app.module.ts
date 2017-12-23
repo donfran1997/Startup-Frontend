@@ -11,6 +11,7 @@ import { AppRoutingModule } from './/app-routing.module';
 import { MainComponent } from './main/main.component';
 import { SearchPageComponent } from './search-page/search-page.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { AboutUsComponent } from './about-us/about-us.component';
     ChannelFeedComponent,
     MainComponent,
     SearchPageComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
