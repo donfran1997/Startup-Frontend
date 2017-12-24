@@ -1,16 +1,30 @@
+<!-- This html template produces sidebar -->
+<!-- see the top of about_us.html for more info -->
+
+
+<!-- Creating a sidebar -->
 <nav class="sidebar">
 
+  <!-- creating a search box for channels -->
   <div class="input-group">
     <input type="text" class="form-control" style="z-index:10;" placeholder="Search by channel...">
+    <!-- creating the emote search button -->
     <span class="input-group-btn">
+      <!-- note &#x2315; is a hex -->
       <button class="btn btn-secondary" type="button">&#x2315;</button>
     </span>
   </div>
-
+  <!-- End of the input-group class -->
+  
+  <!-- hr tag is a thematic break in an HTML page -->
   <hr>
 
+  <!-- any for of h"number" is a header -->
+  <!-- in this case we created a header called public channel which can be seen on the page -->
   <h6>Public Channels</h6>
+  <!-- creating flex columns to list channels -->
   <ul class="nav nav-pills flex-column">
+    <!-- from the opening <li> to the closing </li> this is how we create channels -->
     <li class="nav-item">
       <a (click)="onChannelChange('News Feed')" class="nav-link" href="#"># News Feed</a>
     </li>
@@ -24,8 +38,11 @@
       <a (click)="onChannelChange('...')" class="nav-link" href="#"># ...</a>
     </li>
   </ul>
-
+  
+  <!-- another thermic break -->
   <hr>
+  
+  <!-- This is the same as Public channels above -->
   <h6>Private Channels</h6>
   <ul class="nav nav-pills flex-column">
     <li class="nav-item">
@@ -43,6 +60,9 @@
   </ul>
 
   <hr>
+  
+  <!-- making the hide button -->
   <button class="btn btn-primary">Hide</button>
 
 </nav>
+<!-- sidebar closes here -->
