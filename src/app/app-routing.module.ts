@@ -11,7 +11,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
-  { path: 'w', component: LandingPageComponent },
+  { path: 'welcome', component: LandingPageComponent },
   { path: '', component: MainComponent,
     children: [
       { path: '', redirectTo: 'home', pathMatch: 'full' },
