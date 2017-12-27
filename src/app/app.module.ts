@@ -11,6 +11,9 @@ import { SearchPageComponent } from './search-page/search-page.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { MarketComponent } from './market/market.component';
+import { ProfileComponent } from './profile/profile.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
+import { ItemPageComponent } from './item-page/item-page.component';
 
 
 @NgModule({
@@ -23,7 +26,10 @@ import { MarketComponent } from './market/market.component';
     SearchPageComponent,
     AboutUsComponent,
     PageNotFoundComponent,
-    MarketComponent
+    MarketComponent,
+    ProfileComponent,
+    LandingPageComponent,
+    ItemPageComponent
   ],
   imports: [
     BrowserModule,
