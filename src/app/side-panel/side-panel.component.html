@@ -26,16 +26,17 @@
   <ul class="nav nav-pills flex-column">
     <!-- from the opening <li> to the closing </li> this is how we create channels -->
     <li class="nav-item">
-      <button (click)="onChannelChange('News Feed')" class="btn btn-link my-2 my-sm-0">News Feed</button>
+      <!--<button (click)="onChannelChange('News Feed')" class="btn btn-link my-2 my-sm-0">News Feed</button> -->
+      <a (click)="onChannelChange('News Feed')" class="nav-link" routerLink="/home"># News Feed</a>
     </li>
     <li class="nav-item">
-      <a (click)="onChannelChange('Trends')" class="nav-link" href="#"># Trends</a>
+      <a (click)="onChannelChange('Trends')" class="nav-link" routerLink="/home"># Trends</a>
     </li>
     <li class="nav-item">
-      <a (click)="onChannelChange('Discounts')" class="nav-link" href="#"># Discounts</a>
+      <a (click)="onChannelChange('Discounts')" class="nav-link" routerLink="/home"># Discounts</a>
     </li>
     <li class="nav-item">
-      <a (click)="onChannelChange('...')" class="nav-link" href="#"># ...</a>
+      <a (click)="onChannelChange('...')" class="nav-link" routerLink="/home"># ...</a>
     </li>
   </ul>
 
@@ -46,16 +47,16 @@
   <h6>Private Channels</h6>
   <ul class="nav nav-pills flex-column">
     <li class="nav-item">
-      <a (click)="onChannelChange('Francis')" class="nav-link" href="#"># Francis</a>
+      <a (click)="onChannelChange('Francis')" class="nav-link" routerLink="/home"># Francis</a>
     </li>
     <li class="nav-item">
-      <a (click)="onChannelChange('My-Bot')" class="nav-link" href="#"># My-Bot</a>
+      <a (click)="onChannelChange('My-Bot')" class="nav-link" routerLink="/home"># My-Bot</a>
     </li>
     <li class="nav-item">
-      <a (click)="onChannelChange('...')" class="nav-link" href="#"># ...</a>
+      <a (click)="onChannelChange('...')" class="nav-link" routerLink="/home"># ...</a>
     </li>
     <li class="nav-item">
-      <a (click)="onChannelChange('...')" class="nav-link" href="#"># ...</a>
+      <a (click)="onChannelChange('...')" class="nav-link" routerLink="/home"># ...</a>
     </li>
   </ul>
 
