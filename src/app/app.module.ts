@@ -14,6 +14,7 @@ import { MarketComponent } from './market/market.component';
 import { ProfileComponent } from './profile/profile.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { ItemPageComponent } from './item-page/item-page.component';
+import { ChannelService } from './channel.service';
 
 
 @NgModule({
@@ -35,7 +36,7 @@ import { ItemPageComponent } from './item-page/item-page.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ChannelService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

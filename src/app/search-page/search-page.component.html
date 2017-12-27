@@ -1,10 +1,12 @@
 <div class="container">
 
   <div *ngFor="let row of searchResults" class="row" style="padding:20px">
-    <button *ngFor="let item of row" class="btn btn-link col-3 text-center">
+    <button type="button" data-toggle="modal" data-target="#myModal" *ngFor="let item of row" class="btn btn-link col-3 text-center">
       <img class="img-fluid" style="height:150px;" src="data:image/gif;base64,R0lGODlhAQABAIABAAJ12AAAACwAAAAAAQABAAACAkQBADs=">
       <h6>Item Name</h6>
     </button>
   </div>
+
+  <app-item-page></app-item-page>
 
 </div>

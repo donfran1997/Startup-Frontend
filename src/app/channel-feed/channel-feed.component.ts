@@ -1,17 +1,25 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, OnDestroy } from '@angular/core';
+
+import { ChannelService } from '../channel.service';
 
 @Component({
   selector: 'app-channel-feed',
   templateUrl: './channel-feed.component.html',
-  styleUrls: ['./channel-feed.component.css']
+  styleUrls: ['./channel-feed.component.css'],
 })
-export class ChannelFeedComponent implements OnInit {
+export class ChannelFeedComponent implements OnDestroy {
 
-  @Input() channelName: string;
+  channelID: string;
 
-  constructor() { }
+  constructor(private channelService: ChannelService) {
+
+  }
 
   ngOnInit() {
+    this.channelService.channelID.subscribe(channelID => this.channelID = channelID);
+  }
+
+  ngOnDestroy() {
   }
 
 }
