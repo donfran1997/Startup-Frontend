@@ -1,7 +1,11 @@
-<div class="container-fluid" style="overflow-x:hidden;">
-  <app-side-panel
-    (changeChannel)="changeChannel($event)">
-  </app-side-panel>
-  <app-channel-feed [channelName]="channelName">
-  </app-channel-feed>
-</div>
+<app-navbar></app-navbar>
+<div class="" style="margin-top:90px;">
+  <div class="" style="overflow-x:hidden;">
+    <app-side-panel
+      (changeChannel)="changeChannel($event)">
+    </app-side-panel>
+    <div class="main-window">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+<div>

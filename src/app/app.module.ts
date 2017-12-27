@@ -12,6 +12,7 @@ import { SearchPageComponent } from './search-page/search-page.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { MarketComponent } from './market/market.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { MarketComponent } from './market/market.component';
     SearchPageComponent,
     AboutUsComponent,
     PageNotFoundComponent,
-    MarketComponent
+    MarketComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
