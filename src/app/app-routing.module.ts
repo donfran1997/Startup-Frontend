@@ -15,7 +15,7 @@ const routes: Routes = [
   { path: '', component: MainComponent,
     children: [
       { path: '', redirectTo: 'home', pathMatch: 'full' },
-      { path: 'home', component: ChannelFeedComponent}
+      { path: 'home', component: ChannelFeedComponent },
       { path: 'search', component: SearchPageComponent },
       { path: 'market', component: MarketComponent },
       { path: 'about', component: AboutUsComponent },
