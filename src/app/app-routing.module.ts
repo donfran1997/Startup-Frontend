@@ -1,16 +1,17 @@
 import { NgModule }             from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { HomeComponent } from './home/home.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 import { MainComponent } from './main/main.component';
 import { ChannelFeedComponent } from './channel-feed/channel-feed.component';
 import { SearchPageComponent } from './search-page/search-page.component';
 import { MarketComponent } from './market/market.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { ProfileComponent } from './profile/profile.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
-  { path: 'w', component: HomeComponent },
+  { path: 'w', component: LandingPageComponent },
   { path: '', component: MainComponent,
     children: [
       { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -18,6 +19,7 @@ const routes: Routes = [
       { path: 'search', component: SearchPageComponent },
       { path: 'market', component: MarketComponent },
       { path: 'about', component: AboutUsComponent },
+      { path: 'profile', component: ProfileComponent },
       { path: '**', component: PageNotFoundComponent }
     ]},
   { path: '**', component: PageNotFoundComponent }
