@@ -16,6 +16,8 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { ItemPageComponent } from './item-page/item-page.component';
 import { ChannelService } from './channel.service';
 import { ChannelPostComponent } from './channel-post/channel-post.component';
+import { LoginFormComponent } from './login-form/login-form.component';
+import { SignUpFormComponent } from './sign-up-form/sign-up-form.component';
 
 
 @NgModule({
@@ -32,7 +34,9 @@ import { ChannelPostComponent } from './channel-post/channel-post.component';
     ProfileComponent,
     LandingPageComponent,
     ItemPageComponent,
-    ChannelPostComponent
+    ChannelPostComponent,
+    LoginFormComponent,
+    SignUpFormComponent
   ],
   imports: [
     BrowserModule,
