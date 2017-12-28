@@ -7,7 +7,7 @@ import { Post } from './post';
 export class ChannelService {
 
   // Channel Feed Source
-  private notifySource = new BehaviorSubject<string>("Default Channel");
+  private notifySource = new BehaviorSubject<string>("News Feed");
   channelID = this.notifySource.asObservable();
   NewsFeed = [
     {
