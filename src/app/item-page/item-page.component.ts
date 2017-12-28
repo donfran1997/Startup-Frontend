@@ -1,5 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 
+import { Item } from '../item';
+
 @Component({
   selector: 'app-item-page',
   templateUrl: './item-page.component.html',
@@ -7,7 +9,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ItemPageComponent implements OnInit {
 
-  @Input() item: string;
+  @Input() item: Item;
 
   constructor() { }
 

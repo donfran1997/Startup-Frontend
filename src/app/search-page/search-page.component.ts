@@ -64,7 +64,14 @@ export class SearchPageComponent implements OnInit {
     ],
   ];
 
-  selectedItem: Item;
+  selectedItem: Item = {
+    id: 'NULL',
+    name: 'NULL',
+    details: 'NULL',
+    imageURL: 'NULL',
+    price: 'NULL',
+    storeURL: 'NULL'
+  };
 
   constructor() { }
 
