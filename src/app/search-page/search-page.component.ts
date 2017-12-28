@@ -64,7 +64,7 @@ export class SearchPageComponent implements OnInit {
     ],
   ];
 
-  selectedItem = Item;
+  selectedItem: Item;
 
   constructor() { }
 
