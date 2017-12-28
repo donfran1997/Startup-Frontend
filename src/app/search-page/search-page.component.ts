@@ -15,7 +15,7 @@ export class SearchPageComponent implements OnInit {
         id: '1',
         name: 'item1',
         details: 'details1',
-        imageURL: 'data:image/gif;base64,R0lGODlhAQABAIABAAJ12AAAACwAAAAAAQABAAACAkQBADs=',
+        imageURL: 'https://cdn.tobi.com/product_images/sm/1/black-alannah-off-shoulder-bodycon-dress.jpg',
         price: '$1.00',
         storeURL: '1'
       },

@@ -10,6 +10,28 @@ import { ChannelService } from '../channel.service';
 export class ChannelFeedComponent implements OnDestroy {
 
   channelID: string;
+  posts = [
+    {
+      id: 'postID0',
+      user: {
+        id: 'userID0',
+        name: 'username0',
+        imageURL: 'imageURL0',
+      },
+      message: 'message0',
+      imageURL: 'imageURL0',
+    },
+    {
+      id: '1',
+      user: {
+        id: 'userID1',
+        name: 'username1',
+        imageURL: 'imageURL1',
+      },
+      message: 'message1',
+      imageURL: 'imageURL1',
+    }
+  ];
 
   constructor(private channelService: ChannelService) {
 
