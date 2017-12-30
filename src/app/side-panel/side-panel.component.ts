@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Channel } from '../channel';
 import { ChannelService } from '../channel.service';
 
 @Component({
@@ -9,8 +10,13 @@ import { ChannelService } from '../channel.service';
 })
 export class SidePanelComponent implements OnInit {
 
-  constructor(private channelService: ChannelService) {
+  publicChannels: Channel[];
+  privateChannels: Channel[];
 
+  constructor(private channelService: ChannelService) {
+    let channels = channelService.getChannels('userID');
+    this.publicChannels = channels.public;
+    this.privateChannels = channels.private;
   }
 
   ngOnInit() {

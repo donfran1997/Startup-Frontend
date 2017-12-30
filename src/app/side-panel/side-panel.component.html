@@ -4,9 +4,9 @@
 
   <div class="input-group">
     <input type="text" class="form-control" style="z-index:10;" placeholder="Search...">
-    
+
     <span class="input-group-btn">
-      
+
       <button class="btn btn-secondary" type="button">&#x2315;</button>
     </span>
   </div>
@@ -18,19 +18,10 @@
 
   <ul class="nav nav-pills flex-column">
 
-    <li class="nav-item">
+    <li class="nav-item" *ngFor="let channel of publicChannels">
+      <a (click)="onChannelChange(channel.name)" class="nav-link" routerLink="/home"># {{channel.name}}</a>
+    </li>
 
-      <a (click)="onChannelChange('News Feed')" class="nav-link" routerLink="/home"># News Feed</a>
-    </li>
-    <li class="nav-item">
-      <a (click)="onChannelChange('Trends')" class="nav-link" routerLink="/home"># Trends</a>
-    </li>
-    <li class="nav-item">
-      <a (click)="onChannelChange('Discounts')" class="nav-link" routerLink="/home"># Discounts</a>
-    </li>
-    <li class="nav-item">
-      <a (click)="onChannelChange('...')" class="nav-link" routerLink="/home"># ...</a>
-    </li>
   </ul>
 
 
@@ -39,17 +30,8 @@
 
   <h6>Private Channels</h6>
   <ul class="nav nav-pills flex-column">
-    <li class="nav-item">
-      <a (click)="onChannelChange('Francis')" class="nav-link" routerLink="/home"># Francis</a>
-    </li>
-    <li class="nav-item">
-      <a (click)="onChannelChange('My-Bot')" class="nav-link" routerLink="/home"># My-Bot</a>
-    </li>
-    <li class="nav-item">
-      <a (click)="onChannelChange('...')" class="nav-link" routerLink="/home"># ...</a>
-    </li>
-    <li class="nav-item">
-      <a (click)="onChannelChange('...')" class="nav-link" routerLink="/home"># ...</a>
+    <li class="nav-item" *ngFor="let channel of privateChannels">
+      <a (click)="onChannelChange(channel.name)" class="nav-link" routerLink="/home"># {{channel.name}}</a>
     </li>
   </ul>
 
@@ -59,4 +41,3 @@
   <button class="btn btn-primary">Hide</button>
 
 </nav>
-

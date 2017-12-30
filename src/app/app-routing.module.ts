@@ -8,6 +8,7 @@ import { SearchPageComponent } from './search-page/search-page.component';
 import { MarketComponent } from './market/market.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ProfileComponent } from './profile/profile.component';
+import { HelpComponent } from './help/help.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
@@ -20,6 +21,7 @@ const routes: Routes = [
       { path: 'market', component: MarketComponent },
       { path: 'about', component: AboutUsComponent },
       { path: 'profile', component: ProfileComponent },
+      { path: 'help', component: HelpComponent },
       { path: '**', component: PageNotFoundComponent }
     ]},
   { path: '**', component: PageNotFoundComponent }

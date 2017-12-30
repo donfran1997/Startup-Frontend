@@ -67,7 +67,13 @@ export class ChannelService {
     } else if (channelID == 'Trends') {
       return this.Trends;
     }
+  }
 
-}
+  getChannels(userID: string) {
+    return {
+      public: [ { name: 'News Feed' }, { name: 'Trends' }, { name: 'Discounts' }],
+      private: [ { name: 'My-Bot' }, {name: 'Francis' } ],
+    };
+  }
 
 }
