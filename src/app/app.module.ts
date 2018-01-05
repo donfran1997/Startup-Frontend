@@ -38,7 +38,7 @@ import { HelpComponent } from './help/help.component';
     ChannelPostComponent,
     LoginFormComponent,
     SignUpFormComponent,
-    HelpComponent
+    HelpComponent,
   ],
   imports: [
     BrowserModule,
