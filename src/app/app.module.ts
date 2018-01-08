@@ -19,6 +19,7 @@ import { ChannelPostComponent } from './channel-post/channel-post.component';
 import { LoginFormComponent } from './login-form/login-form.component';
 import { SignUpFormComponent } from './sign-up-form/sign-up-form.component';
 import { HelpComponent } from './help/help.component';
+import { SettingsComponent } from './settings/settings.component';
 
 
 @NgModule({
@@ -39,6 +40,7 @@ import { HelpComponent } from './help/help.component';
     LoginFormComponent,
     SignUpFormComponent,
     HelpComponent,
+    SettingsComponent,
   ],
   imports: [
     BrowserModule,

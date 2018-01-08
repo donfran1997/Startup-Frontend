@@ -12,6 +12,7 @@ import { HelpComponent } from './help/help.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { SignUpFormComponent } from './sign-up-form/sign-up-form.component';
 import { LoginFormComponent } from './login-form/login-form.component';
+import { SettingsComponent } from './settings/settings.component';
 
 const routes: Routes = [
   { path: 'welcome', component: LandingPageComponent },
@@ -26,6 +27,7 @@ const routes: Routes = [
       { path: 'help', component: HelpComponent },
       { path: 'signup', component: SignUpFormComponent },
       { path: 'login', component: LoginFormComponent },
+      { path: 'setting', component: SettingsComponent },
       { path: '**', component: PageNotFoundComponent },      
     ]},
   { path: '**', component: PageNotFoundComponent }
