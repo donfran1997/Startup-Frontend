@@ -10,8 +10,6 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { ProfileComponent } from './profile/profile.component';
 import { HelpComponent } from './help/help.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { SignUpFormComponent } from './sign-up-form/sign-up-form.component';
-import { LoginFormComponent } from './login-form/login-form.component';
 import { SettingsComponent } from './settings/settings.component';
 
 const routes: Routes = [
@@ -25,10 +23,8 @@ const routes: Routes = [
       { path: 'about', component: AboutUsComponent },
       { path: 'profile', component: ProfileComponent },
       { path: 'help', component: HelpComponent },
-      { path: 'signup', component: SignUpFormComponent },
-      { path: 'login', component: LoginFormComponent },
       { path: 'setting', component: SettingsComponent },
-      { path: '**', component: PageNotFoundComponent },      
+      { path: '**', component: PageNotFoundComponent },
     ]},
   { path: '**', component: PageNotFoundComponent }
 ];
