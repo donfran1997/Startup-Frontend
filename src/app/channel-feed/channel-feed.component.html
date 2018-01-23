@@ -1,17 +1,13 @@
-<div class="channel-window">
+<div>
 
-  <div class="container">
-    <div class="row">
-      <h1 class="col-10">{{ channelID }}</h1>
-      <div class="col-2">
-        <button type="" class="btn btn-primary">New Post</button>
-      </div>
-    </div>
-    <hr>
+  <div class="row">
+    <h1 class="col-10">{{ channelID }}</h1>
+    <button type="" class="btn btn-primary" data-toggle="modal" data-target="#newPostModal">New Post</button>
   </div>
+  <hr>
 
-  <div class="channel-feed container">
-    <app-channel-post *ngFor="let post of posts" style=";padding:10px" [post]="post"></app-channel-post>
+  <div class="channel-feed">
+    <app-channel-post *ngFor="let post of posts" style="padding:10px;" [post]="post"></app-channel-post>
   </div>
 
 </div>

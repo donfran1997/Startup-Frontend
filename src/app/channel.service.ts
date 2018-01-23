@@ -42,16 +42,6 @@ export class ChannelService {
       },
       message: 'message0',
       imageURL: 'imageURL0',
-    },
-    {
-      id: '1',
-      user: {
-        id: 'userID1',
-        name: 'user3333name1',
-        imageURL: 'imageURL1',
-      },
-      message: 'message1',
-      imageURL: 'imageURL1',
     }
   ];
 

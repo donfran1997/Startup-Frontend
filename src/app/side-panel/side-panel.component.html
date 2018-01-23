@@ -1,43 +1,31 @@
-
-
 <nav class="sidebar">
 
   <div class="input-group">
     <input type="text" class="form-control" style="z-index:10;" placeholder="Search...">
-
     <span class="input-group-btn">
-
       <button class="btn btn-secondary" type="button">&#x2315;</button>
     </span>
   </div>
 
   <hr>
 
-
   <h6>Public Channels</h6>
 
   <ul class="nav nav-pills flex-column">
-
     <li class="nav-item" *ngFor="let channel of publicChannels">
       <a (click)="onChannelChange(channel.name)" class="nav-link" routerLink="/home"># {{channel.name}}</a>
     </li>
-
   </ul>
-
 
   <hr>
 
-
   <h6>Private Channels</h6>
+
   <ul class="nav nav-pills flex-column">
     <li class="nav-item" *ngFor="let channel of privateChannels">
       <a (click)="onChannelChange(channel.name)" class="nav-link" routerLink="/home"># {{channel.name}}</a>
     </li>
+    <a class="nav-link" routerLink="/home">+ New Channel</a>
   </ul>
-
-  <hr>
-
-
-  <button class="btn btn-primary">Hide</button>
 
 </nav>

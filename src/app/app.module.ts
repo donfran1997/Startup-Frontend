@@ -20,6 +20,7 @@ import { LoginFormComponent } from './login-form/login-form.component';
 import { SignUpFormComponent } from './sign-up-form/sign-up-form.component';
 import { HelpComponent } from './help/help.component';
 import { SettingsComponent } from './settings/settings.component';
+import { NewPostComponent } from './new-post/new-post.component';
 
 
 @NgModule({
@@ -41,6 +42,7 @@ import { SettingsComponent } from './settings/settings.component';
     SignUpFormComponent,
     HelpComponent,
     SettingsComponent,
+    NewPostComponent,
   ],
   imports: [
     BrowserModule,
