@@ -1,0 +1,15 @@
+<div class="container">
+	<br/>
+	<h1 style="font-size:45px">Boys</h1>
+	<hr>
+  <div *ngFor="let row of searchResults" class="row" style="padding:20px">
+    <button class="btn btn-link col-3 text-center" type="button" data-toggle="modal" data-target="#myModal" *ngFor="let item of row" (click)="selectItem(item)">
+      <img class="img-fluid" style="height:150px;" src="{{item.imageURL}}">
+      <h6>{{item.name}}</h6>
+    </button>
+  </div>
+
+  <app-item-page [item]="selectedItem"></app-item-page>
+
+</div>
+

@@ -21,6 +21,10 @@ import { SignUpFormComponent } from './sign-up-form/sign-up-form.component';
 import { HelpComponent } from './help/help.component';
 import { SettingsComponent } from './settings/settings.component';
 import { NewPostComponent } from './new-post/new-post.component';
+import { BoysComponent } from './boys/boys.component';
+import { GirlsComponent } from './girls/girls.component';
+import { MenComponent } from './men/men.component';
+import { WomenComponent } from './women/women.component';
 
 
 @NgModule({
@@ -43,6 +47,10 @@ import { NewPostComponent } from './new-post/new-post.component';
     HelpComponent,
     SettingsComponent,
     NewPostComponent,
+    BoysComponent,
+    GirlsComponent,
+    MenComponent,
+    WomenComponent,
   ],
   imports: [
     BrowserModule,

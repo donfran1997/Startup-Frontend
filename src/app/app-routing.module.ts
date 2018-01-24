@@ -11,6 +11,10 @@ import { ProfileComponent } from './profile/profile.component';
 import { HelpComponent } from './help/help.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { SettingsComponent } from './settings/settings.component';
+import { BoysComponent } from './boys/boys.component';
+import { WomenComponent } from './women/women.component';
+import { GirlsComponent } from './girls/girls.component';
+import { MenComponent } from './men/men.component';
 
 const routes: Routes = [
   { path: 'welcome', component: LandingPageComponent },
@@ -24,6 +28,10 @@ const routes: Routes = [
       { path: 'profile', component: ProfileComponent },
       { path: 'help', component: HelpComponent },
       { path: 'setting', component: SettingsComponent },
+      { path: 'boys', component: BoysComponent },
+      { path: 'girls', component: GirlsComponent },
+      { path: 'men', component: MenComponent },
+      { path: 'women', component: WomenComponent },
       { path: '**', component: PageNotFoundComponent },
     ]},
   { path: '**', component: PageNotFoundComponent }
