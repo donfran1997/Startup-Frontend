@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Item } from '../item';
+
 @Component({
   selector: 'app-boys',
   templateUrl: './boys.component.html',
